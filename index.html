@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Tây Nguyên</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -25,6 +25,10 @@
       }
       .form-group-wrap {
         margin: 0 auto;
+      }
+
+      .hidden {
+        display: none;
       }
     </style>
   </head>
@@ -105,7 +109,6 @@
         Tính tiền điện
       </button>
       <div class="mt-2 alert alert-success">
-        
         <span id="tienDien"></span>
       </div>
     </div>
@@ -130,6 +133,39 @@
       </button>
       <div class="mt-2 alert alert-success">
         <span id="thuePhaiTra"></span>
+      </div>
+    </div>
+
+    <!-- Bài 4: Tính tiền cáp -->
+    <div class="form-group-wrap p-5 w-50">
+      <h2>Bài 4: Tính tiền cáp.</h2>
+      <div class="form-group">
+        <p>Mã Khách Hàng:</p>
+        <input id="maKH" class="form-control" type="text" />
+      </div>
+      <div class="form-group mt-3">
+        <label for="customerType" class="label-style"> Loại khách hàng: </label>
+        <select id="customerType" name="customerType">
+          <option value="1">Doanh nghiệp.</option>
+          <option value="0">Nhà dân.</option>
+        </select>
+      </div>
+      <div class="form-group mt-3">
+        <div id="form-ketnoi">
+          <p>Số kết nối:</p>
+          <input id="soKetNoi" class="form-control" type="number" />
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <p>Số kênh cao cấp:</p>
+        <input id="soKenhCaoCap" class="form-control" type="number" />
+      </div>
+      <button class="btn btn-success mt-3" id="tinhHoaDon">
+        Tính hóa đơn.
+      </button>
+
+      <div class="mt-2 alert alert-success">
+        <span id="textHoaDon"></span>
       </div>
     </div>
     <script
